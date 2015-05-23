@@ -25,25 +25,9 @@ if ( function_exists('register_sidebar') ) {
 	'after_title'   => '</h3>' );
 	#register_sidebar($args);
     # Register default sidebar:
-    #register_sidebar("right_sidebar");
-    
-    
-    # Register titlepage left column:
-    $args = array(
-	'name'          => __( 'Left column titlepage', 'theme_text_domain' ),
-	'id'            => 'titlepage_left',
-	'description'   => 'Sidebar titlepage left stuff',
-    'class'         => '',
-	'before_widget' => '',
-	'after_widget'  => '',
-	'before_title'  => '<h3>',
-	'after_title'   => '</h3>' );
-	
     register_sidebar($args);
     
-    
-    
-    # Register right titlepage sidebar 
+    # Register right titlepage sidebar
     $args = array(
 	'name'          => __( 'Right column ', 'theme_text_domain' ),
 	'id'            => 'titlepage_right',

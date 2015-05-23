@@ -9,8 +9,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{$home-url}">
-                        <!--<img src="<?php bloginfo('template_url');?>/logo.png">-->
+                    <a class="navbar-brand" href="{$homeUrl}">
+                        {*<img src="{$templateUrl}/resources/logo.png" class="img-responsive"/>*}
+                        <span class="first">Performa</span><span class="second">Tune</span>
                     </a>
                 </div>
                 {wp_nav_menu( $menuArgs )}

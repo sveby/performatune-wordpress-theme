@@ -7,6 +7,8 @@ require_once 'libs/Smarty.class.php';
  * This function fills the smarty object with common data to all views
  */
 function theme_smarty_prepare() {
+    global $_lang;
+
     $smarty = new Smarty();
     $smarty->setTemplateDir(realpath(__DIR__)."/templates");
     #var_dump($smarty);
@@ -29,6 +31,7 @@ function theme_smarty_prepare() {
 
     $smarty->assign("menuArgs", $mainMenuArgs);
     $smarty->assign("footer", get_footer());
+    $smarty->assign("lang", $_lang);
 
     return $smarty;
 }

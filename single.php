@@ -1,4 +1,13 @@
 <?php
+    /**
+     *
+     * Author: Svebor Prstačić, sprstacic.wordpress.com, @sprstacic
+     *
+    * */
+
+    global $_lang;
+    $tmp = explode("/",$_SERVER['REQUEST_URI']);
+    $_lang = $tmp[1];
 
     # Fill smarty with common theme requirements:
     require 'smarty_prepare.php';
