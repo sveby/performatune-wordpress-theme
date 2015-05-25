@@ -2,6 +2,14 @@ html {
     margin-top: 20px;
 }
 
+.jumbotron.single {
+    background-color: @gray-lighter;
+    padding: 15px 0;
+    h1 {
+        font-size: 50px;
+    }
+}
+
 .navigation {
     background-color: @brand-primary;
 }
@@ -15,6 +23,10 @@ html {
     &:hover {
         color: @navbar-default-link-hover-color;
     }
+}
+
+.search-button {
+    top: 0px;
 }
 
 .sidebar {
@@ -35,7 +47,7 @@ html {
     margin-bottom: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: @gray-lighter;
+    color: @gray-light;
 }
 
 /* Make it so that we have no problems with photos - make them all responsive */
@@ -48,7 +60,7 @@ img {
     background-color: @brand-primary;
 
     .first {
-        color: @gray-light;
+        color: @brand-info;
     }
     .second {
         color: #fff;

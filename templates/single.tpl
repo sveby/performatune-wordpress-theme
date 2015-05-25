@@ -2,14 +2,15 @@
 
 
 {block name="banner"}
-    <div class="jumbotron">
+    <div class="page-header single">
+        <div class="container">
+            <h1>{$postTitle}</h1>
+        </div>
     </div>
 {/block}
 
 {block name="content_area"}
     <div class="col-md-8 main-content">
-
-        <h1>{$postTitle}</h1>
         {$postContent}
     </div>
 

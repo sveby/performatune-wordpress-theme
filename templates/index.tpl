@@ -23,13 +23,7 @@
         </div>
 
         {block name="banner"}
-            <div class="jumbotron">
-                <div class="container">
-                    <h1>Performatune</h1>
-                    <p>...</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-                </div>
-            </div>
+            {include file="banner.tpl"}
         {/block}
 
         <div class="container main">
@@ -41,7 +35,7 @@
                     <div class="col-md-8">
                         {foreach $outlined_pages as $page}
                             <div class="col-sm-12 col-md-6">
-                                <div class="panel panel-primary">
+                                <div class="panel panel-info">
                                     <div class="panel-heading">{$page->post_title}</div>
                                     <div class="panel-body">
                                         {$page->post_content}
@@ -54,7 +48,10 @@
                         {/foreach}
                     </div>
 
-                    <div class="col-md-4 sidebar">
+
+                    <div class="col-md-4">
+                        {include file="titlepage_latest_posts.tpl" posts=$posts}
+
                         {$faker = dynamic_sidebar('titlepage_right')}
                     </div>
 
@@ -72,7 +69,7 @@
             {$footer}
 
             <div clas="row row-centered">
-                <p class="text-center">Copyright Performatune</p>
+                <p class="text-center">Copyright Performatune, 2015.</p>
             </div>
         </div> {* footer-container end *}
 

@@ -3176,9 +3176,9 @@ fieldset[disabled] .btn-success.active {
   background-color: #fff;
 }
 .btn-info {
-  color: #fff;
-  background-color: #516679;
-  border-color: #47596a;
+  color: #777;
+  background-color: #d9edf7;
+  border-color: #c4e3f3;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -3186,9 +3186,9 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  color: #fff;
-  background-color: #3d4c5a;
-  border-color: #2e3a45;
+  color: #777;
+  background-color: #afd9ee;
+  border-color: #91cbe8;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3213,12 +3213,12 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #516679;
-  border-color: #47596a;
+  background-color: #d9edf7;
+  border-color: #c4e3f3;
 }
 .btn-info .badge {
-  color: #516679;
-  background-color: #fff;
+  color: #d9edf7;
+  background-color: #777;
 }
 .btn-warning {
   color: #fff;
@@ -4748,7 +4748,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #fff;
+  color: #777;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -4789,11 +4789,11 @@ a.label:focus {
   background-color: #194d39;
 }
 .label-info {
-  background-color: #516679;
+  background-color: #d9edf7;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #3d4c5a;
+  background-color: #afd9ee;
 }
 .label-warning {
   background-color: #f0ad4e;
@@ -4859,7 +4859,7 @@ a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #fff;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4871,7 +4871,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+  border-top-color: #e6e6e6;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5068,7 +5068,7 @@ a.thumbnail.active {
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #516679;
+  background-color: #d9edf7;
 }
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -6586,6 +6586,13 @@ button.close {
 html {
   margin-top: 20px;
 }
+.jumbotron.single {
+  padding: 15px 0;
+  background-color: #eee;
+}
+.jumbotron.single h1 {
+  font-size: 50px;
+}
 .navigation {
   background-color: #2a4e6e;
 }
@@ -6597,6 +6604,9 @@ html {
 }
 .nav a:hover {
   color: #333;
+}
+.search-button {
+  top: 0;
 }
 .sidebar {
   padding-bottom: 30px;
@@ -6612,8 +6622,8 @@ html {
   padding-bottom: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #eee;
-  background: #516679;
+  color: #777;
+  background: #d9edf7;
 }
 /* Make it so that we have no problems with photos - make them all responsive */
 img {
@@ -6625,7 +6635,7 @@ img {
   background-color: #2a4e6e;
 }
 .navbar-brand .first {
-  color: #777;
+  color: #d9edf7;
 }
 .navbar-brand .second {
   color: #fff;
