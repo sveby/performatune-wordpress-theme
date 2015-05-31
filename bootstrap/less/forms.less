@@ -97,7 +97,13 @@ output {
 //
 // select
 // textarea
-// input[type="text"]
+input[type="text"] {
+    .form-control;
+}
+input[type="text"]:focus {
+    .form-control-focus();
+}
+
 // input[type="password"]
 // input[type="datetime"]
 // input[type="datetime-local"]

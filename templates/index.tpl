@@ -49,7 +49,7 @@
                     </div>
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 sidebar-titlepage">
                         {include file="titlepage_latest_posts.tpl" posts=$posts}
 
                         {$faker = dynamic_sidebar('titlepage_right')}
@@ -70,6 +70,7 @@
 
             <div clas="row row-centered">
                 <p class="text-center">Copyright Performatune, 2015.</p>
+                <p class="text-center">Kontakt: {mailto address="info@performatune.com"}</p>
             </div>
         </div> {* footer-container end *}
 
