@@ -18,4 +18,9 @@ while (have_posts()) {
     $smarty->assign("edit-post-link", get_edit_post_link());
 }
 
-$smarty->display("single.tpl");
+if (isset($templatePreset )) {
+    $template = $templatePreset;
+} else {
+    $template = "single.tpl";
+}
+$smarty->display($template);
