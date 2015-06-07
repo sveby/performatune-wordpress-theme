@@ -27,6 +27,7 @@
                               <span class="input-group-btn">
                                 <button class="btn btn-default glyphicon glyphicon-search search-button" type="button"></button>
                               </span>
+                            <input type="hidden" name="lang" value="{$lang}" />
                         </div>
                     </form>
 

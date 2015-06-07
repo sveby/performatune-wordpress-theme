@@ -12,10 +12,13 @@ initTheme();
 
 while (have_posts()) {
     the_post();
+    $postID = get_the_id();
+    $smarty->assign("id", $postID);
     $smarty->assign("postTitle", get_the_title());
     $smarty->assign("postContent", get_the_content());
-    $smarty->assign("post-thumbnail", get_the_post_thumbnail());
-    $smarty->assign("edit-post-link", get_edit_post_link());
+    $smarty->assign("postThumbnail", get_the_post_thumbnail($postID, 'thumbnail'));
+    $smarty->assign("editPostLink", get_edit_post_link());
+    $smarty->assign("postExcerpt", get_the_excerpt());
 }
 
 if (isset($templatePreset )) {

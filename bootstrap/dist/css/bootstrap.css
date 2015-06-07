@@ -6844,10 +6844,7 @@ html {
 .search-button {
   top: 0;
 }
-.sidebar-titlepage ul {
-  padding: 0;
-}
-.sidebar-titlepage ul li {
+.sidebar-titlepage ul padding li {
   list-style: none;
 }
 .sidebar-titlepage .lang-item {
@@ -6962,10 +6959,7 @@ fieldset[disabled] .sidebar-titlepage .lang-item.active {
     box-shadow: 0 10px 8px -7px #000000;*/
   border-radius: 15px;
 }
-.sidebar ul {
-  padding: 0;
-}
-.sidebar ul li {
+.sidebar ul padding li {
   list-style: none;
 }
 .sidebar .lang-item {
@@ -7103,5 +7097,35 @@ img {
 .align-middle {
   display: table-cell;
   vertical-align: middle;
+}
+img.alignleft,
+img.wp-post-image {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+img.alignright {
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+img.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+img.attachment-thumbnail {
+  margin: 0 10px 0 0;
+}
+.archive-post {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  clear: both;
+  border-bottom: 2px inset #eee;
+}
+.clear {
+  clear: both;
+}
+.postContent p {
+  margin-top: 1.3em;
+  /**or any other value you want**/
 }
 /*# sourceMappingURL=bootstrap.css.map */

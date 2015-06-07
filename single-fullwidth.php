@@ -1,6 +1,6 @@
 <?php
 
 
-$templatePreset = "single-fullwidth.tpl";
+#$templatePreset = "single-fullwidth.tpl";
 
-include("single.php");
+#include("single.php");

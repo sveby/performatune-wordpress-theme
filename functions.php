@@ -11,8 +11,12 @@ require_once('wp_bootstrap_navwalker.php');
 # This function is a sort of initializer for the theme - starts up Smarty, makes sure $_lang is loaded etc.
 function initTheme() {
     global $_lang, $smarty;
-    $tmp = explode("/",str_replace("/index.php", "", $_SERVER['REQUEST_URI']));
-    $_lang = $tmp[1];
+    if (isset($_GET['lang'])) {
+        $_lang = $_GET['lang'];
+    } else {
+        $tmp = explode("/", str_replace("/index.php", "", $_SERVER['REQUEST_URI']));
+        $_lang = $tmp[1];
+    }
 
     # Fill smarty with common theme requirements:
 

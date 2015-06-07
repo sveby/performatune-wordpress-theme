@@ -11,12 +11,37 @@
 
 {block name="content_area"}
     <div class="col-md-8 main-content">
-        {$postContent}
-    </div>
+        <div class="row">
+            {if $postExcerpt}
+                <div class="col-sm-2">
+                    {$postThumbnail}
+                </div>
+                <div class="col-sm-10">
+                    <em>{$postExcerpt}</em>
+                </div>
 
+            {/if}
+
+        </div>
+
+        <div class="row row-centered">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8"> <hr></div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                {the_content()}
+                <div class="clear"></div>
+                <hr>
+            </div>
+        </div>
+    </div>
     <div class="col-md-4 sidebar">
         {$faker = dynamic_sidebar('single_right')}
     </div>
-
 {/block}
+
+
 
