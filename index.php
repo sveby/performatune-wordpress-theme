@@ -11,7 +11,7 @@ initTheme();
 
 # Load outlined pages for the titlepage:
 
-$outlinedPages = array(get_page(2), get_page(10), get_page(13));
+$outlinedPages = array(get_page(2), get_page(10), get_page(13), get_page(55));
 
 # If we have polylang, make sure we are getting the right language posts:
 if (function_exists("pll_get_post")) {

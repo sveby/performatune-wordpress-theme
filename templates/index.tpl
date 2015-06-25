@@ -49,7 +49,7 @@
                     </div>
 
 
-                    <div class="col-md-4 sidebar-titlepage">
+                    <div class="col-md-4 col-sm-12 sidebar-titlepage">
                         {include file="titlepage_latest_posts.tpl" posts=$posts}
 
                         {$faker = dynamic_sidebar('titlepage_right')}

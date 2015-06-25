@@ -18,7 +18,9 @@ while (have_posts()) {
     $smarty->assign("postContent", get_the_content());
     $smarty->assign("postThumbnail", get_the_post_thumbnail($postID, 'thumbnail'));
     $smarty->assign("editPostLink", get_edit_post_link());
-    $smarty->assign("postExcerpt", get_the_excerpt());
+    if (has_excerpt($postID)) {
+        $smarty->assign("postExcerpt", get_the_excerpt());
+    }
 }
 
 if (isset($templatePreset )) {
