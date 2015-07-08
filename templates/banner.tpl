@@ -2,8 +2,15 @@
 <div class="row">
     <div class="col-md-6 left-banner-part">
         <div class="align-middle text-center">
-            <h1>Performatune</h1><em>a consultancy company</em><br> <br>
-            Oracle, IBM, RedHat, Open Source..
+            {if $lang == "en" }
+                <h1>Josip Pojatina</h1>
+                provides consulting in Oracle Retail Performance Tuning, <br>Oracle & Java Performance Troubleshooting and Tuning,
+                <br>Design & Development of HA scalable systems <br>based on Oracle and Open Source technology.
+            {else}
+                <h1>Josip Pojatina</h1>
+                provides consulting in Oracle Retail Performance Tuning, <br>Oracle & Java Performance Troubleshooting and Tuning,
+                <br>Design & Development of HA scalable systems <br>based on Oracle and Open Source technology.
+            {/if}
         </div>
     </div>
 

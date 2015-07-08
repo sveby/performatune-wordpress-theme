@@ -13,6 +13,15 @@ initTheme();
 
 $outlinedPages = array(get_page(2), get_page(10), get_page(13), get_page(55));
 
+# We have only one page to which the links on the front page lead:
+$smarty->assign("moreLink", get_page(pll_get_post(78, $_lang))->guid);
+
+# This is the only string right now, for more translatable strings, better implementation should be made:
+$smarty->assign("langMore", "Saznajte više!");
+if ($_lang == "en") {
+    $smarty->assign("langMore", "Find out more!");
+}
+
 # If we have polylang, make sure we are getting the right language posts:
 if (function_exists("pll_get_post")) {
     $postsTmp = $outlinedPages;
@@ -27,7 +36,6 @@ $smarty->assign("outlined_pages", $outlinedPages);
 
 
 # Load latest posts for the titlepage:
-
 $args = array(
     'numberposts' => 4,
     'offset' => 0,

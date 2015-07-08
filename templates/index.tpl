@@ -9,6 +9,7 @@
 
         <link href="{$templateUrl}/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{$stylesheetUrl}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
         <link rel="shortcut icon" type="image/x-icon" href="{$templateUrl}/resources/logo.png" />
 
@@ -40,7 +41,8 @@
                                     <div class="panel-body">
                                         {$page->post_content}
                                         <p class="text-center frontpage-more-link">
-                                            <a href="{$page->guid}" class="btn btn-info">Saznajte više!</a>
+                                            {* More link selected from a preselected page: *}
+                                            <a href="{$moreLink}{*page->guid*}" class="btn btn-info">{$langMore}</a>
                                         </p>
                                     </div>
                                 </div>
@@ -70,7 +72,7 @@
 
             <div clas="row row-centered">
                 <p class="text-center">Copyright Performatune, 2015.</p>
-                <p class="text-center">Kontakt: {mailto address="info@performatune.com"}</p>
+                <p class="text-center"><i class="fa fa-envelope-o"></i> {mailto address="info@performatune.com"}</p>
             </div>
         </div> {* footer-container end *}
 
