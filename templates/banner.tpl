@@ -15,7 +15,7 @@
     </div>
 
     <div class="col-md-6 text-center">
-        <img src="{$templateUrl}/resources/banner.png" class="img-responsive" align=""/>
+        <img src="/wp-content/uploads/2015/07/canstockphoto23666482.jpg" class="img-responsive" align=""/>
     </div>
 </div>
 </div>
