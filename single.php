@@ -21,6 +21,7 @@ while (have_posts()) {
     if (has_excerpt($postID)) {
         $smarty->assign("postExcerpt", get_the_excerpt());
     }
+    $smarty->assign("comments", get_comments(array('post_id'=>$postID, 'order'=>'ASC')));
 }
 
 if (isset($templatePreset )) {

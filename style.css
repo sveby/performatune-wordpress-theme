@@ -10,3 +10,31 @@ Version: 1.0
 /*
     All styles are in less files.
 */
+
+
+.comment {
+    border-bottom: 1px dotted gray;
+    padding: 15px 0;
+}
+.comment-author {
+    background-color: #fefefe;
+    color: #2a4e6e;
+    font-size:18px;
+}
+.comment-author .time {
+    font-size:12px;
+    text-decoration: italic;
+}
+
+.comment-content {
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.comment-form-comment label {
+    width: 100%;
+}
+.comment-form-comment textarea {
+    width: 100%;
+}
