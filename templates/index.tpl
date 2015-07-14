@@ -10,6 +10,8 @@
         <link href="{$templateUrl}/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{$stylesheetUrl}">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/zenburn.min.css">
+        
 
         <link rel="shortcut icon" type="image/x-icon" href="{$templateUrl}/resources/logo.png" />
 
@@ -76,10 +78,19 @@
             </div>
         </div> {* footer-container end *}
 
+        <!-- Include highlights.js -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+
         <!-- Include jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{$templateUrl}/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        
+        
         {wp_footer()}
 
     </body>
