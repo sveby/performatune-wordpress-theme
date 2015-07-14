@@ -7128,4 +7128,28 @@ img.attachment-thumbnail {
   margin-top: 1.3em;
   /**or any other value you want**/
 }
+.comment {
+  padding: 15px 0;
+  border-bottom: 1px dotted gray;
+}
+.comment-author {
+  font-size: 18px;
+  color: #2a4e6e;
+  background-color: #fefefe;
+}
+.comment-author .time {
+  font-size: 12px;
+  font-style: italic;
+}
+.comment-content {
+  display: table-cell;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.comment-form-comment label {
+  width: 100%;
+}
+.comment-form-comment textarea {
+  width: 100%;
+}
 /*# sourceMappingURL=bootstrap.css.map */
