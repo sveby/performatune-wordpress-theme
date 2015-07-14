@@ -18,6 +18,11 @@ function initTheme() {
         $_lang = $tmp[1];
     }
 
+    if ($_lang !== "en") {
+        // Currently, we want to disable Croatian, redirect everything to English!
+        header('Location: http://www.performatune.com/en/');
+    }
+
     # Fill smarty with common theme requirements:
 
     $smarty = theme_smarty_prepare();
