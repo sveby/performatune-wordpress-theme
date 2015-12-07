@@ -12,10 +12,15 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/zenburn.min.css">
         
+        
 
         <link rel="shortcut icon" type="image/x-icon" href="{$templateUrl}/resources/logo.png" />
 
         {wp_head()}
+        
+        <meta name="description" content="Performatune provides consulting in Oracle Retail Performance Tuning, Oracle & Java Performance Troubleshooting and Tuning, Design & Development of HA scalable systems based on Oracle and Open Source technology.">
+        <meta name="keywords" content="Oracle,Java,Programming,Performance,Performance tuning, Troubleshooting,Josip,Pojatina,Open source,technology,Josip Pojatina">
+        <meta name="author" content="Josip Pojatina">
     </head>
 
 
