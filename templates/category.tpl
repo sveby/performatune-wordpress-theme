@@ -28,6 +28,25 @@
             </div>
 
         {/foreach}
+    {$postsLeft = get_next_posts_link('Older posts')}
+    {$postsRight = get_previous_posts_link('Newer posts')}
+    
+    {* If needed, in the future, we could use this: *}
+    {* get_the_posts_pagination() *}
+    
+    <div class="row">
+            <div class="col-md-6 text-left">
+                {if $postsLeft}
+                    <i class="fa fa-caret-square-o-left" ></i> {$postsLeft}
+                {/if}
+            </div>
+             
+            <div class="col-md-6 text-right"> 
+                {if $postsRight}
+                    {$postsRight} <i class="fa fa-caret-square-o-right" aria-hidden="true"></i> 
+                {/if}
+            </div>
+        </div>
 
     </div>
 
